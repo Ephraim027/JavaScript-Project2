@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Carlina Resort</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+          <div class="villacarlina">
+            <img src="images/resort-logo/logo.jpg">
+          </div>
+              <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="room_reservation.html">Room Reservation</a></li>
+                  <li><a href="Restaurant_Menu.html">Restaurant Menu</a></li>
+                  <div class="dropdown">
+                    <button class="dropbtn">Gallery</button>
+                    <div class="dropdown-content">
+                      <a href="Resort.html">Resort</a>
+                      <a href="beach.html">Beach</a>
+                    </div>
+                  </div>
+                  <li><a href="about_us.html">About Us</a></li>
+                  <li><a href="Contact_Us.html">Contact Us</a></li>
+              </ul>
+            
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+  <h2 class="room_title">Room Reservation</h2>
+<div class="RoomInfo_Amenities">
+  <div class="RoomInfo_row">
+    <div class="RoomImage">
+      <img src="images/Rooms-Image/sunflower.jpg" alt="room11" width="300" height="200">
+    </div>
+    <div class="RoomDetails">
+      <h1 class="RoomPayment_title">Room Sunflower (12 Pax)</h1>
+      <ul class="RoomListAmenities">
+        <li>Fully Air-Conditioned</li>
+        <li>Cable TV</li>
+        <li>Individual toilet and bath, 1 common C.R</li>
+        <li>Restaurant</li>
+      </ul>  
+      <!--The menu-->
+      <ul id="menu" style="display: none;">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>        
+      <!-- Buttons to increment and decrement the counter -->
+      <div class="button-group">
+        <button id="incrementButton">Increase Day</button>
+        <button id="decrementButton">Decrease Day</button>
+        <button id="PricesButton">Prices Offer</button>
+      </div>
+      <!-- increament and decrement button counter -->
+      <div id="counter_number"> 
+        <p>Quantity: <span id="counter">1</span></p>
+      </div>       
+      <!-- Price offer list -->
+      <div id="price-container">
+        <ul id="Price" style="display: none;">
+          <li>PHP 2,000.00 (Peak Season)</li>
+          <li>PHP 1,500.00 (Off Peak)</li>
+        </ul>
+      </div>   
+      <!-- Book Now Button -->
+      <button id="alertBookNowButton" data-room="Lilac Room">Book Now</button>
+    </div>
+  </div>
+</div>
+            
+<!-- Background Section -->
+<div class="carlina-resort">
+<img src="images/homepage-background/background-beach.jpg">
+</div>
+            
+<footer>
+  <p>
+    <span><a href="https://www.facebook.com/VillaCarlinaResort16" target="_blank">Villa Carlina Resort</a></span> | &copy; 2024 All Rights Reserved (Ephraim B. Espiritu)
+  </p>
+</footer>
+            
+<!-- Scripts -->
+<script src="js/hamburgerBth.js"></script>
+<script src="js/slides-scripts.js"></script>
+<script src="js/IncrementAndDecrementScript.js"></script>
+<script src="js/AlertsScriptRoomInfo1.js"></script>
+<script src="js/HideAndShowButtonScript.js"></script>
+            
+</body>
+</html> 
